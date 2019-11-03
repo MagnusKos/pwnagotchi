@@ -10,9 +10,10 @@ Small = ImageFont.truetype("%s.ttf" % PATH, 9)
 Huge = ImageFont.truetype("%s-Bold.ttf" % PATH, 25)
 
 
-def setup(bold, bold_small, medium, huge):
-    global PATH, Bold, BoldSmall, Medium, Huge
+def setup(bold, bold_small, medium, huge, small=9):
+    global PATH, Bold, BoldSmall, Medium, Huge, Small
     Bold = ImageFont.truetype("%s-Bold.ttf" % PATH, bold)
     BoldSmall = ImageFont.truetype("%s-Bold.ttf" % PATH, bold_small)
     Medium = ImageFont.truetype("%s.ttf" % PATH, medium)
     Huge = ImageFont.truetype("%s-Bold.ttf" % PATH, huge)
+    Small = ImageFont.truetype("%s.ttf" % PATH, small)
